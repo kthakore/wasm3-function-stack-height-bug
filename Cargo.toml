@@ -1,0 +1,24 @@
+[package]
+name = "wasm3-function-stack-height-bug"
+version = "0.1.0"
+authors = ["Kartik Thakore <kthakore@alumni.uwo.ca>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+arrayvec = "0.5.2"
+
+[lib]
+crate-type = ["cdylib"]
+
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+opt-level = "s"
+codegen-units = 1
+lto = true
+
