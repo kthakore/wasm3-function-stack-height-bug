@@ -1,5 +1,5 @@
 
-#define d_m3MaxFunctionStackHeight 128
+#define d_m3MaxFunctionStackHeight 64
 
 #include <wasm3.h>
 
