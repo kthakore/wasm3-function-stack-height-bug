@@ -1,5 +1,8 @@
 
 Run `build.sh` 
+## Dependencies
 
-Make sure you have `wasm-opt` and `wasm-strip` in `$PATH`
-Install cargo and wasm3-unknown-unknown target
+*`wasm-opt` 
+*`wasm-strip`
+* rustup, cargo and wasm3-unknown-unknown target
+* `arduino-cli`
